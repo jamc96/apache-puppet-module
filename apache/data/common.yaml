@@ -1,0 +1,10 @@
+---
+apache::package_name: 'httpd'
+apache::config_path: '/etc/httpd/conf/httpd.conf'
+apache::server_root: '/etc/httpd'
+apache::pid_file: 'run/httpd.pid'
+apache::time_out: 60
+apache::vhost_path: '/etc/httpd/conf.d'
+apache::service_name: 'httpd'
+apache::service_ensure: 'running'
+apache::manage_service: true
