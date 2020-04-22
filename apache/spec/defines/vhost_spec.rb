@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'apache::vhost' do
-  let(:title) { 'namevar' }
+  let(:title) { 'custom_vhost_1' }
   let(:params) do
     {}
   end
@@ -10,7 +10,6 @@ describe 'apache::vhost' do
     context "on #{os}" do
       let(:facts) { os_facts }
 
-      it { is_expected.to compile }
     end
   end
 end
